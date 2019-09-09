@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="text-center">Barcode Generator</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="productname" class="col-3 col-form-label">Product name</label>
+                                        <div class="col-6">
+                                            <input id="productname" name="productname" class="form-control"
+                                                required="required" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="productid" class="col-3 col-form-label">Product ID</label>
+                                        <div class="col-6">
+                                            <input id="productid" name="productid" class="form-control" type="text"
+                                                required="required">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-3"></div>
+                                        <div class="col-6">
+                                            <button id="generate" type="button"
+                                                class="btn-lg btn-success w-100">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas id="barcode" style="display:none;"></canvas>
+
+    <script src="assets/barcode/JsBarcode.code128.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/jspdf/jspdf.min.js"></script>
+    <script src="assets/jspdf/center.js"></script>
+    <script src="assets/barcode/barcode.js"></script>
+</body>
+
+</html>
